@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>abdy</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h1><span>A</span>BDY.</h1>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()"></i>
+
+          </ul>
+          <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>Hi,I'm <span>Abdurhaman</span> <br />Mohammed From Ethiopia</h1>
+          
+        </div>
+      </div>
+    </div>
+    <!-- -----------about------------ -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="img/bg2.JPG" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-titie">About Me</h1>
+            <p>
+                I'm a highly motivated and quick-learning full-stack developer with a strong foundation in both front-end and back-end technologies. My journey into the world of coding began with a deep fascination for turning ideas into functional, user-friendly applications. I'm eager to contribute my skills and continuously learn from seasoned professionals.
+                
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-links" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('Project')">Projects</p>
+              <p class="tab-links" onclick="opentab('Education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Front-end development</span><br />
+                  Html,Css,Javascript and React js
+                </li>
+                <li>
+                  <span>back-end development</span><br />
+                  Node js,Express and php
+                </li>
+                <li>
+                  <span>Database</span><br />
+                  Mysql,Mongodb and Api integration
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Project">
+              <ul>
+                <li>
+                  <span>Personal portfolio</span><br />
+                  with html,css,js and react js
+                </li>
+                <li>
+                  <span>Employe management system</span><br />
+                  with react js, node js,express and mysql
+                </li>
+                <li>
+                  <span>Ecommerce website</span><br />
+                  with html,css and javascript
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+              <ul>
+                <li>
+                  <span>2016</span><br />
+                  ECE Degree in Dilla University
+                </li>
+                <li>
+                  <span>2018</span><br />
+                  Course of cyber security and IT essenital in cisco acadamy
+                </li>
+                <li>
+                  <span>2022</span><br />
+                  Full-stack(MERN) Web development in MIT
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -----------projects------------ -->
+    <div id="project">
+      <div class="container">
+        <h1 class="sub-titie">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="img/bg4.jpg" alt="" />
+            <div class="layer">
+              <h3>personal portfolio</h3>
+              <p>using html , css and javascript</p>
+              <a href="" target="_blank"><i class="fab fa-github"></i> </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/bg1.jpg" alt="" />
+            <div class="layer">
+              <h3>personal portfolio</h3>
+              <p>React js</p>
+              <a href="https://github.com/abdurhamanmohammed/React-personal-portfolio" target="_blank"><i class="fab fa-github"></i> </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="img/prros.jpg" alt="" />
+            <div class="layer">
+              <h3>Employeer management system</h3>
+              <p>react,node js,express and mysql</p>
+              <a href="https://github.com/abdurhamanmohammed/Employeer-Management-System" target="_blank"><i class="fab fa-github"></i> </a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/abdurhamanmohammed" target="_blank" class="btn">see more</a>
+      </div>
+    </div>
+     <!-- -----------contact------------ -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-titie">Contact Me</h1>
+                    <p><i class="fas fa-inbox"></i>abdymohammed73@gmail.com</p>
+                    <p><i class="fas fa-phone-alt"></i>251-922460249</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-telegram"></i></a>
+                        <a href="https://www.linkedin.com/in/abdymo233" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/abdymo233" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </div>
+                    <a href="img/Mycv2.pdf" download class='btn btn2'>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="" id="contactform">
+                        <input type="text" name="user_name"
+                        placeholder="Your Name" required>
+                        <input type="email" name="user_email"
+                        placeholder="Your Email" required>
+                        <textarea name="user_project"   rows="6" placeholder="Your Message"></textarea>
+                        <p id="contactmessage"></p>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Powerd by <span>A</span>bdy.</p>
+        </div>
+     </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-links");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-links");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+        var sidemenu=document.getElementById('sidemenu');
+        function openmenu(){
+            sidemenu.style.right='0';
+        }
+        function closemenu(){
+            sidemenu.style.right='-200px';
+        }
+    </script>
+    <script  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        let contactform=document.getElementById('contactform');
+        let contactmessage=document.getElementById('contactmessage');
+        let sendEmail=(e)=>{
+            e.preventDefault()
+            emailjs.sendForm('service_twgogoi','template_g5s5sdi','#contactform','IotWPWt4ctvibWyby')
+            .then(()=>{
+                contactmessage.textContent='Message sent successfully'
+                setTimeout(()=>{
+                    contactmessage.textContent=''
+
+                },5000)
+                contactform.reset()
+            },()=>{
+                contactmessage.textContent='Message not sent (service error)'
+
+            })
+        }
+        contactform.addEventListener('submit',sendEmail)
+    </script>
+  </body>
+</html>
